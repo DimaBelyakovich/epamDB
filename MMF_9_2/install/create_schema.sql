@@ -1,0 +1,10 @@
+DEFINE USER_NAME = &&1
+
+CREATE USER &USER_NAME{
+    -- password is user_name 
+    IDENTIFIED BY password &USER_NAME
+    ACCOUNT UNLOCK
+}
+
+
+UNDEFINE USER_NAME
