@@ -2,7 +2,9 @@ DEFINE USER_NAME = &&1
 
 CREATE USER &USER_NAME
     -- password is user_name 
+    PROMPT password is user_name
     IDENTIFIED BY password &USER_NAME
+    DEFAULT TABLESPACE "&&USER_NAME._DATA"
     ACCOUNT UNLOCK
 
 UNDEFINE USER_NAME
