@@ -3,7 +3,7 @@ DEFINE tbs_location = &&2
 DEFINE tbs_type =  &&3
 
 DEFINE l_tbs = &tbs_name_&tbs_type
-DEFINE tbsFile = &l_tbs.dbf
+DEFINE tbsFile = &l_tbs..dbf
 
 CREATE TABLESPACE &&l_tbs
     DATAFILE &&tbsFile
