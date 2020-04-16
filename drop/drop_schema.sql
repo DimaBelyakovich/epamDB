@@ -1,7 +1,5 @@
 DEFINE USER_NAME = &&1
 
-DROP USER &&USER_NAME
+DROP USER &&USER_NAME;
 
-PROMPT "user name dropped "
-
-UNDEFINE USER_NAME
+PROMPT "user name dropped"

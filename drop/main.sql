@@ -12,3 +12,4 @@ PROMPT "user_name = &&USER_NAME"
 @drop_schema.sql &&USER_NAME
 
 UNDEFINE USER_NAME
+SPOOL OFF
