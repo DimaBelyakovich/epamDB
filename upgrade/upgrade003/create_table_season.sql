@@ -6,3 +6,7 @@ CREATE TABLE SEASON (
     YEAR NUMBER,
     CONSTRAINT PK_SEASON PRIMARY KEY (ID) USING INDEX TABLESPACE &&INDEX_TBS
 );
+
+COMMENT ON COLUMN SEASON.ID 'Unique value, serves as the primary key for the table';
+COMMENT ON COLUMN SEASON.NAME 'Name of the season';
+COMMENT ON COLUMN SEASON.YEAR 'Year of the season';

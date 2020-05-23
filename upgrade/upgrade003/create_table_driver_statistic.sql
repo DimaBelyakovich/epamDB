@@ -13,4 +13,4 @@ COMMENT ON COLUMN DRIVER_STATISTIC.ID 'Unique value, serves as the primary key f
 COMMENT ON COLUMN DRIVER_STATISTIC.SEASON_ID 'ID of the season in which the driver could participate';
 COMMENT ON COLUMN DRIVER_STATISTIC.DRIVER_ID 'ID of driver';
 COMMENT ON COLUMN DRIVER_STATISTIC.TEAM_ID 'ID of a team that driver may belong to';
-COMMENT ON COLUMN DRIVER_STATISTIC.EVENT_WINS 'Number of wins won by the driver'
+COMMENT ON COLUMN DRIVER_STATISTIC.EVENT_WINS 'Number of wins won by the driver';

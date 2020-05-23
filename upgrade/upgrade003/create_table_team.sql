@@ -6,3 +6,7 @@ CREATE TABLE TEAM (
     COUNTRY varchar2(50),
     CONSTRAINT PK_TEAM PRIMARY KEY (ID) USING INDEX TABLESPACE &&INDEX_TBS
 );
+
+COMMENT ON COLUMN TEAM.ID 'Unique value, serves as the primary key for the table';
+COMMENT ON COLUMN TEAM.NAME 'Nname of the team';
+COMMENT ON COLUMN TEAM.COUNTRY 'Country of a team';
