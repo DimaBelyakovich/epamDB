@@ -1,13 +1,12 @@
-CREATE TABLE "TRACK" (
-    "id" int   NOT NULL,
-    "name" varchar2(100)   NOT NULL,
-    "length" NUMBER   NOT NULL,
-    "latitude" NUMBER   NOT NULL,
-    "longitude" NUMBER   NOT NULL,
-    "country" varchar2(100)   NOT NULL,
-    "city" varchar2(100)   NOT NULL,
-    CONSTRAINT "pk_TRACK" PRIMARY KEY (
-        "id"
-     )
-     ENABLE
+DEFINE INDEX_TBS = &&1
+
+CREATE TABLE TRACK (
+    ID int GENERATED ALWAYS AS IDENTITY INCREMENT BY 1 START WITH 1 MINVALUE 1 NOT NULL,
+    NAME varchar2(200),
+    LENGTH NUMBER,
+    LATITUDE NUMBER,
+    LONGITUDE NUMBER,
+    COUNTRY varchar2(100),
+    CITY varchar2(100),
+    CONSTRAINT PK_TRACK PRIMARY KEY (ID) USING INDEX TABLESPACE &&INDEX_TBS
 );

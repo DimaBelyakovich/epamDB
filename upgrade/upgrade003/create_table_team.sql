@@ -1,10 +1,8 @@
-CREATE TABLE "TEAM" (
-    "id" int   NOT NULL,
-    "name" varchar2(50)   NOT NULL,
-    "country" varchar2(50)   NOT NULL,
-    "num_of_events" int   NOT NULL,
-    CONSTRAINT "pk_TEAM" PRIMARY KEY (
-        "id"
-     )
-     ENABLE
+DEFINE INDEX_TBS = &&1
+
+CREATE TABLE TEAM (
+    ID NUMBER GENERATED ALWAYS AS IDENTITY INCREMENT BY 1 START WITH 1 MINVALUE 1 NOT NULL,
+    NAME varchar2(50),
+    COUNTRY varchar2(50),
+    CONSTRAINT PK_TEAM PRIMARY KEY (ID) USING INDEX TABLESPACE &&INDEX_TBS
 );

@@ -1,9 +1,12 @@
-CREATE TABLE "EVENT" (
-    "id" int   NOT NULL,
-    "name" varchar2(100)   NOT NULL,
-    "date" DATE   NOT NULL,
-    CONSTRAINT "pk_EVENT" PRIMARY KEY (
-        "id"
-     )
-     ENABLE
+DEFINE INDEX_TBS = &&1
+
+CREATE TABLE EVENT (
+    ID int GENERATED ALWAYS AS IDENTITY INCREMENT BY 1 START WITH 1 MINVALUE 1 NOT NULL,
+    NAME varchar2(100),
+    EVENT_DATE DATE,
+    CONSTRAINT PK_EVENT PRIMARY KEY (ID) USING INDEX TABLESPACE &&INDEX_TBS
 );
+
+COMMENT ON COLUMN EVENT.ID 'Unique value, serves as the primary key for the table';
+COMMENT ON COLUMN EVENT.NAME 'NAME of the event';
+COMMENT ON COLUMN EVENT.DATE 'Date of the event';

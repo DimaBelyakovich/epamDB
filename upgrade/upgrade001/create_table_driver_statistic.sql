@@ -1,3 +1,7 @@
+DEFINE TBLSP = &&1;
+
+DEFINE TABLE_SPACE = '&&TBLSP._DATA'
+
 CREATE TABLE "driver_statistic" (
     "driver_id" int NOT NULL,
     "best_result" int NOT NULL,
@@ -11,4 +15,4 @@ CREATE TABLE "driver_statistic" (
      )
      ENABLE
 )
-TABLESPACE MMF_9_2_DATA;
+TABLESPACE &&TABLE_SPACE;

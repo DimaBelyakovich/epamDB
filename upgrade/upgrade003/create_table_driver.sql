@@ -1,12 +1,16 @@
-CREATE TABLE "DRIVER" (
-    "id" int   NOT NULL,
-    "name" varchar2(30)   NOT NULL,
-    "surname" varchar2(40)   NOT NULL,
-    "num_of_poles" int   NOT NULL,
-    "num_of_events" int   NOT NULL,
-    "num_of_seasons" int   NOT NULL,
-    CONSTRAINT "pk_DRIVER" PRIMARY KEY (
-        "id"
-     )
-     ENABLE
+DEFINE INDEX_TBS = &&1
+
+CREATE TABLE DRIVER (
+    ID NUMBER GENERATED ALWAYS AS IDENTITY INCREMENT BY 1 START WITH 1 MINVALUE 1 NOT NULL,
+    NAME varchar2(30),
+    NUM_OF_POLES NUMBER,
+    NUM_OF_EVENTS NUMBER,
+    NUM_OF_SEASONS NUMBER,
+    CONSTRAINT PK_DRIVER PRIMARY KEY (ID) USING INDEX TABLESPACE &&INDEX_TBS
 );
+
+COMMENT ON COLUMN DRIVER.ID 'Unique value, serves as the primary key for the table';
+COMMENT ON COLUMN DRIVER.NAME 'Name of a driver';
+COMMENT ON COLUMN DRIVER.NUM_OF_POLES 'Number of pole positions won by the driver';
+COMMENT ON COLUMN DRIVER.NUM_OF_EVENTS 'Number of events that the driver participated in';
+COMMENT ON COLUMN DRIVER.NUM_OF_SEASONS 'Number of seasons that the driver participated in';

@@ -1,6 +1,15 @@
-CREATE TABLE "SEASON_EVENT" (
-    "season_id" int   NOT NULL,
-    "event_id" int   NOT NULL,
-    "track_id" int   NOT NULL,
-    "fastest_lap" int   NOT NULL
+DEFINE INDEX_TBS = &&1
+
+CREATE TABLE SEASON_EVENT (
+    ID NUMBER GENERATED ALWAYS AS IDENTITY INCREMENT BY 1 START WITH 1 MINVALUE 1 NOT NULL,
+    SEASON_ID NUMBER NOT NULL,
+    EVENT_ID NUMBER NOT NULL,
+    TRACK_ID NUMBER NOT NULL,
+    FASTEST_LAP TIMESTAMP,
+    CONSTRAINT PK_SEASON_EVENT PRIMARY KEY (ID) USING INDEX TABLESPACE &&INDEX_TBS
 );
+
+COMMENT ON COLUMN SEASON_EVENT.ID 'Unique value, serves as the primary key for the table';
+COMMENT ON COLUMN SEASON_EVENT.SEASON_ID 'ID of the season in which the event could participate';
+COMMENT ON COLUMN SEASON_EVENT.EVENT_ID 'ID of the event in which the track could participate';
+COMMENT ON COLUMN SEASON_EVENT.TRACK_ID 'ID of the track that hosted the event';
