@@ -7,6 +7,6 @@ CREATE TABLE EVENT (
     CONSTRAINT PK_EVENT PRIMARY KEY (ID) USING INDEX TABLESPACE &&INDEX_TBS
 );
 
-COMMENT ON COLUMN EVENT.ID 'Unique value, serves as the primary key for the table';
-COMMENT ON COLUMN EVENT.NAME 'NAME of the event';
-COMMENT ON COLUMN EVENT.DATE 'Date of the event';
+COMMENT ON COLUMN EVENT.ID IS 'Unique value, serves as the primary key for the table';
+COMMENT ON COLUMN EVENT.NAME IS 'NAME of the event';
+COMMENT ON COLUMN EVENT.DATE IS 'Date of the event';

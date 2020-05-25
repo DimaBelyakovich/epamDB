@@ -9,7 +9,7 @@ CREATE TABLE SEASON_EVENT (
     CONSTRAINT PK_SEASON_EVENT PRIMARY KEY (ID) USING INDEX TABLESPACE &&INDEX_TBS
 );
 
-COMMENT ON COLUMN SEASON_EVENT.ID 'Unique value, serves as the primary key for the table';
-COMMENT ON COLUMN SEASON_EVENT.SEASON_ID 'ID of the season in which the event could participate';
-COMMENT ON COLUMN SEASON_EVENT.EVENT_ID 'ID of the event in which the track could participate';
-COMMENT ON COLUMN SEASON_EVENT.TRACK_ID 'ID of the track that hosted the event';
+COMMENT ON COLUMN SEASON_EVENT.ID IS 'Unique value, serves as the primary key for the table';
+COMMENT ON COLUMN SEASON_EVENT.SEASON_ID IS 'ID of the season in which the event could participate';
+COMMENT ON COLUMN SEASON_EVENT.EVENT_ID IS 'ID of the event in which the track could participate';
+COMMENT ON COLUMN SEASON_EVENT.TRACK_ID IS 'ID of the track that hosted the event';

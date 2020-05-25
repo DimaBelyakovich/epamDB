@@ -11,10 +11,10 @@ CREATE TABLE TRACK (
     CONSTRAINT PK_TRACK PRIMARY KEY (ID) USING INDEX TABLESPACE &&INDEX_TBS
 );
 
-COMMENT ON COLUMN TRACK.ID 'Unique value, serves as the primary key for the table';
-COMMENT ON COLUMN TRACK.NAME 'Name of the track';
-COMMENT ON COLUMN TRACK.LENGTH 'Length of the track';
-COMMENT ON COLUMN TRACK.LATITUDE 'Latitude of the track';
-COMMENT ON COLUMN TRACK.LONGITUDE 'Longitude of the track';
-COMMENT ON COLUMN TRACK.COUNTRY 'Country of the track';
-COMMENT ON COLUMN TRACK.CITY 'City of the track';
+COMMENT ON COLUMN TRACK.ID IS 'Unique value, serves as the primary key for the table';
+COMMENT ON COLUMN TRACK.NAME IS 'Name of the track';
+COMMENT ON COLUMN TRACK.LENGTH IS 'Length of the track';
+COMMENT ON COLUMN TRACK.LATITUDE IS 'Latitude of the track';
+COMMENT ON COLUMN TRACK.LONGITUDE IS 'Longitude of the track';
+COMMENT ON COLUMN TRACK.COUNTRY IS 'Country of the track';
+COMMENT ON COLUMN TRACK.CITY IS 'City of the track';

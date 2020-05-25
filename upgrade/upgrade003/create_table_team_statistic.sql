@@ -8,7 +8,7 @@ CREATE TABLE TEAM_STATISTIC (
     CONSTRAINT PK_TEAM_STATISTIC PRIMARY KEY (ID) USING INDEX TABLESPACE &&INDEX_TBS
 );
 
-COMMENT ON COLUMN TEAM_STATISTIC.ID 'Unique value, serves as the primary key for the table';
-COMMENT ON COLUMN TEAM_STATISTIC.SEASON_ID 'ID of the season in which the team could participate';
-COMMENT ON COLUMN TEAM_STATISTIC.TEAM_ID 'ID of a team';
-COMMENT ON COLUMN TEAM_STATISTIC.NUM_OF_WINS 'Number of wins won by the team';
+COMMENT ON COLUMN TEAM_STATISTIC.ID IS 'Unique value, serves as the primary key for the table';
+COMMENT ON COLUMN TEAM_STATISTIC.SEASON_ID IS 'ID of the season in which the team could participate';
+COMMENT ON COLUMN TEAM_STATISTIC.TEAM_ID IS 'ID of a team';
+COMMENT ON COLUMN TEAM_STATISTIC.NUM_OF_WINS IS 'Number of wins won by the team';

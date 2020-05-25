@@ -9,8 +9,8 @@ CREATE TABLE DRIVER (
     CONSTRAINT PK_DRIVER PRIMARY KEY (ID) USING INDEX TABLESPACE &&INDEX_TBS
 );
 
-COMMENT ON COLUMN DRIVER.ID 'Unique value, serves as the primary key for the table';
-COMMENT ON COLUMN DRIVER.NAME 'Name of a driver';
-COMMENT ON COLUMN DRIVER.NUM_OF_POLES 'Number of pole positions won by the driver';
-COMMENT ON COLUMN DRIVER.NUM_OF_EVENTS 'Number of events that the driver participated in';
-COMMENT ON COLUMN DRIVER.NUM_OF_SEASONS 'Number of seasons that the driver participated in';
+COMMENT ON COLUMN DRIVER.ID IS 'Unique value, serves as the primary key for the table';
+COMMENT ON COLUMN DRIVER.NAME IS 'Name of a driver';
+COMMENT ON COLUMN DRIVER.NUM_OF_POLES IS 'Number of pole positions won by the driver';
+COMMENT ON COLUMN DRIVER.NUM_OF_EVENTS IS 'Number of events that the driver participated in';
+COMMENT ON COLUMN DRIVER.NUM_OF_SEASONS IS 'Number of seasons that the driver participated in';

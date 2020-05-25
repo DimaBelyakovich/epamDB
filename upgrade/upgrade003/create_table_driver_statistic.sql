@@ -9,8 +9,8 @@ CREATE TABLE DRIVER_STATISTIC (
     CONSTRAINT PK_DRIVER_STATISTIC PRIMARY KEY (ID) USING INDEX TABLESPACE &&INDEX_TBS
 );
 
-COMMENT ON COLUMN DRIVER_STATISTIC.ID 'Unique value, serves as the primary key for the table';
-COMMENT ON COLUMN DRIVER_STATISTIC.SEASON_ID 'ID of the season in which the driver could participate';
-COMMENT ON COLUMN DRIVER_STATISTIC.DRIVER_ID 'ID of driver';
-COMMENT ON COLUMN DRIVER_STATISTIC.TEAM_ID 'ID of a team that driver may belong to';
-COMMENT ON COLUMN DRIVER_STATISTIC.EVENT_WINS 'Number of wins won by the driver';
+COMMENT ON COLUMN DRIVER_STATISTIC.ID IS 'Unique value, serves as the primary key for the table';
+COMMENT ON COLUMN DRIVER_STATISTIC.SEASON_ID IS 'ID of the season in which the driver could participate';
+COMMENT ON COLUMN DRIVER_STATISTIC.DRIVER_ID IS 'ID of driver';
+COMMENT ON COLUMN DRIVER_STATISTIC.TEAM_ID IS 'ID of a team that driver may belong to';
+COMMENT ON COLUMN DRIVER_STATISTIC.EVENT_WINS IS 'Number of wins won by the driver';
