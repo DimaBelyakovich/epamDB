@@ -21,17 +21,17 @@ CREATE TABLE DATA_TABLE (
 INSERT INTO DATA_TABLE (SEASON, EVENT_DATE, EVENT, CIRCUIT, DRIVER, CONSTRUCTOR, LAPS, TIME, POINTS, START_DRIVER_PLACE, POLE_POSITION, WINNER, DRIVER_WINS, CONSTRUCTOR_WINS) 
 VALUES ('2019 SEASON', to_date('3/17/2019', 'MM/DD/RRRR'), 'Australian Grand Prix', 'Albert Park Grand Prix Circuit', 'Valtteri Bottas', 'Mercedes', 58, '01:25:27', 26, 2, 'Lewis Hamilton', 'Valtteri Bottas', 7, 102);
 INSERT INTO DATA_TABLE (SEASON, EVENT_DATE, EVENT, CIRCUIT, DRIVER, CONSTRUCTOR, LAPS, TIME, POINTS, START_DRIVER_PLACE, POLE_POSITION, WINNER, DRIVER_WINS, CONSTRUCTOR_WINS) 
-VALUES ('2020 SEASON', to_date('3/17/2019', 'MM/DD/RRRR'), 'Australian Grand Prix', 'Albert Park Grand Prix Circuit', 'Lewis Hamilton', 'Mercedes', 58, '20.886', 18, 1, 'Lewis Hamilton', 'Valtteri Bottas', 84, 102);
+VALUES ('2019 SEASON', to_date('3/17/2019', 'MM/DD/RRRR'), 'Australian Grand Prix', 'Albert Park Grand Prix Circuit', 'Lewis Hamilton', 'Mercedes', 58, '20.886', 18, 1, 'Lewis Hamilton', 'Valtteri Bottas', 84, 102);
 INSERT INTO DATA_TABLE (SEASON, EVENT_DATE, EVENT, CIRCUIT, DRIVER, CONSTRUCTOR, LAPS, TIME, POINTS, START_DRIVER_PLACE, POLE_POSITION, WINNER, DRIVER_WINS, CONSTRUCTOR_WINS) 
-VALUES ('2021 SEASON', to_date('3/17/2019', 'MM/DD/RRRR'), 'Australian Grand Prix', 'Albert Park Grand Prix Circuit', 'Max Verstappen', 'Red Bull', 58, '22.52', 15, 3, 'Lewis Hamilton', 'Valtteri Bottas', 8, 62);
+VALUES ('2019 SEASON', to_date('3/17/2019', 'MM/DD/RRRR'), 'Australian Grand Prix', 'Albert Park Grand Prix Circuit', 'Max Verstappen', 'Red Bull', 58, '22.52', 15, 3, 'Lewis Hamilton', 'Valtteri Bottas', 8, 62);
 INSERT INTO DATA_TABLE (SEASON, EVENT_DATE, EVENT, CIRCUIT, DRIVER, CONSTRUCTOR, LAPS, TIME, POINTS, START_DRIVER_PLACE, POLE_POSITION, WINNER, DRIVER_WINS, CONSTRUCTOR_WINS) 
-VALUES ('2022 SEASON', to_date('3/31/2019', 'MM/DD/RRRR'), 'Bahrain Grand Prix', 'Bahrain International Circuit', 'Lewis Hamilton', 'Mercedes', 57, '01:34:21', 25, 3, 'Charles Leclerc', 'Lewis Hamilton', 84, 102);
+VALUES ('2019 SEASON', to_date('3/31/2019', 'MM/DD/RRRR'), 'Bahrain Grand Prix', 'Bahrain International Circuit', 'Lewis Hamilton', 'Mercedes', 57, '01:34:21', 25, 3, 'Charles Leclerc', 'Lewis Hamilton', 84, 102);
 INSERT INTO DATA_TABLE (SEASON, EVENT_DATE, EVENT, CIRCUIT, DRIVER, CONSTRUCTOR, LAPS, TIME, POINTS, START_DRIVER_PLACE, POLE_POSITION, WINNER, DRIVER_WINS, CONSTRUCTOR_WINS) 
-VALUES ('2023 SEASON', to_date('3/31/2019', 'MM/DD/RRRR'), 'Bahrain Grand Prix', 'Bahrain International Circuit', 'Valtteri Bottas', 'Mercedes', 57, 'Feb-98', 18, 2, 'Charles Leclerc', 'Lewis Hamilton', 7, 102);
+VALUES ('2019 SEASON', to_date('3/31/2019', 'MM/DD/RRRR'), 'Bahrain Grand Prix', 'Bahrain International Circuit', 'Valtteri Bottas', 'Mercedes', 57, 'Feb-98', 18, 2, 'Charles Leclerc', 'Lewis Hamilton', 7, 102);
 INSERT INTO DATA_TABLE (SEASON, EVENT_DATE, EVENT, CIRCUIT, DRIVER, CONSTRUCTOR, LAPS, TIME, POINTS, START_DRIVER_PLACE, POLE_POSITION, WINNER, DRIVER_WINS, CONSTRUCTOR_WINS) 
-VALUES ('2024 SEASON', to_date('3/31/2019', 'MM/DD/RRRR'), 'Bahrain Grand Prix', 'Bahrain International Circuit', 'Charles Leclerc', 'Ferrari', 57, '6.131', 16, 1, 'Charles Leclerc', 'Lewis Hamilton', 2, 239);
+VALUES ('2019 SEASON', to_date('3/31/2019', 'MM/DD/RRRR'), 'Bahrain Grand Prix', 'Bahrain International Circuit', 'Charles Leclerc', 'Ferrari', 57, '6.131', 16, 1, 'Charles Leclerc', 'Lewis Hamilton', 2, 239);
 INSERT INTO DATA_TABLE (SEASON, EVENT_DATE, EVENT, CIRCUIT, DRIVER, CONSTRUCTOR, LAPS, TIME, POINTS, START_DRIVER_PLACE, POLE_POSITION, WINNER, DRIVER_WINS, CONSTRUCTOR_WINS) 
-VALUES ('2025 SEASON', to_date('4/14/2019', 'MM/DD/RRRR'), 'Chinese Grand Prix', 'Shanghai International Circuit', 'Lewis Hamilton', 'Mercedes', 56, '01:32:06', 26, 1, 'Valtteri Bottas', 'Lewis Hamilton', 84, 102);
+VALUES ('2019 SEASON', to_date('4/14/2019', 'MM/DD/RRRR'), 'Chinese Grand Prix', 'Shanghai International Circuit', 'Lewis Hamilton', 'Mercedes', 56, '01:32:06', 26, 1, 'Valtteri Bottas', 'Lewis Hamilton', 84, 102);
 INSERT INTO DATA_TABLE (SEASON, EVENT_DATE, EVENT, CIRCUIT, DRIVER, CONSTRUCTOR, LAPS, TIME, POINTS, START_DRIVER_PLACE, POLE_POSITION, WINNER, DRIVER_WINS, CONSTRUCTOR_WINS) 
 VALUES ('2019 SEASON', to_date('4/14/2019', 'MM/DD/RRRR'), 'Chinese Grand Prix', 'Shanghai International Circuit', 'Valtteri Bottas', 'Mercedes', 56, '6.552', 18, 2, 'Valtteri Bottas', 'Lewis Hamilton', 7, 102);
 INSERT INTO DATA_TABLE (SEASON, EVENT_DATE, EVENT, CIRCUIT, DRIVER, CONSTRUCTOR, LAPS, TIME, POINTS, START_DRIVER_PLACE, POLE_POSITION, WINNER, DRIVER_WINS, CONSTRUCTOR_WINS) 
@@ -60,7 +60,7 @@ INSERT INTO DATA_TABLE (SEASON, EVENT_DATE, EVENT, CIRCUIT, DRIVER, CONSTRUCTOR,
 VALUES ('2018 SEASON', to_date('4/15/2018', 'MM/DD/RRRR'), 'Chinese Grand Prix', 'Shanghai International Circuit', 'Valtteri Bottas', 'Mercedes', 56, '8.894', 18, 1, 'Sebastian Vettel', 'Daniel Ricciardo', 7, 102);
 INSERT INTO DATA_TABLE (SEASON, EVENT_DATE, EVENT, CIRCUIT, DRIVER, CONSTRUCTOR, LAPS, TIME, POINTS, START_DRIVER_PLACE, POLE_POSITION, WINNER, DRIVER_WINS, CONSTRUCTOR_WINS) 
 VALUES ('2018 SEASON', to_date('4/15/2018', 'MM/DD/RRRR'), 'Chinese Grand Prix', 'Shanghai International Circuit', 'Kimi Räikkönen', 'Ferrari', 56, '9.637', 15, 3, 'Sebastian Vettel', 'Daniel Ricciardo', 21, 239);
-
+-- Import Data into table DATA_TABLE from file FORMULA.xlsx . Task successful and sent to worksheet.
 
 --INSERT SEASON 
 MERGE INTO SEASON 
