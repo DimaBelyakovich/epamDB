@@ -9,4 +9,4 @@ CREATE TABLE EVENT (
 
 COMMENT ON COLUMN EVENT.ID IS 'Unique value, serves as the primary key for the table';
 COMMENT ON COLUMN EVENT.NAME IS 'NAME of the event';
-COMMENT ON COLUMN EVENT.DATE IS 'Date of the event';
+COMMENT ON COLUMN EVENT.EVENT_DATE IS 'Date of the event';
